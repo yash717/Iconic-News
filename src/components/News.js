@@ -3,6 +3,7 @@ import { Spinner } from "./spinner";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Uptop from "./uptop";
 
 export class News extends Component {
   static defaultProps = {
@@ -50,11 +51,13 @@ export class News extends Component {
     });
     this.props.setProgress(100);
   }
-  
 
   render() {
     return (
       <>
+        <Uptop />
+    
+        
         <h1 className="text-center" style={{ margin: "25px 0px" }}>
           Top {this.capitalizeFirstLetter(this.props.category)} Headline
         </h1>

@@ -19,7 +19,7 @@ export class ArticleItem1 extends Component {
             alt="First slide"
           />
           <div className="carousel-caption d-md-block">
-            <h5 className="h5__class_search">{title}</h5>
+            <h5 className="h5__class_search">{title} </h5>
             <p>{date}</p>
           </div>
         </div>

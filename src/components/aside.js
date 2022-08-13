@@ -13,8 +13,8 @@ class Aside extends Component {
 
   async componentDidMount() {
     let url =
-      " https://newsdata.io/api/1/news?apikey=pub_5811eeeb9c2ee8efbe0956152bd19f024775&country=in";
-     
+      "https://newsdata.io/api/1/news?apikey=pub_5811eeeb9c2ee8efbe0956152bd19f024775&country=in";
+
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -29,7 +29,7 @@ class Aside extends Component {
           <h4 id="recent" className="recent__news__h4">
             RECENT NEWS
           </h4>
-          {this.state.results.slice(0, 5).map((element, i) => {
+          {this.state.results.slice(3, 8).map((element, i) => {
             return (
               <AsideItem
                 key={i}

@@ -66,6 +66,7 @@ export class Category extends Component {
           <Link className="nav-link" id="id_fora_collapse" to="/sports">
             <button id="category_btn">
               <SportsIcon id="category_icons" />
+              Sports
             </button>
           </Link>
         </a>

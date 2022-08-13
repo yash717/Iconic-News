@@ -6,7 +6,6 @@ import { ArticleItem4 } from "./articleitem4";
 import { ArticleItem5 } from "./articleitem5";
 import Aside from "./aside";
 
-
 export class Article1 extends Component {
   constructor(props) {
     super(props);
@@ -18,14 +17,11 @@ export class Article1 extends Component {
   }
 
   async componentDidMount() {
-    this.props.setProgress(30);
     let url =
       "https://newsdata.io/api/1/news?apikey=pub_5811eeeb9c2ee8efbe0956152bd19f024775&country=in&category=top";
     this.setState({ loading: true });
-
     let data = await fetch(url);
     let parsedData = await data.json();
-    // console.log(parsedData);
     this.setState({
       results: parsedData.results,
     });
